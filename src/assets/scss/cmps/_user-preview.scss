@@ -1,0 +1,48 @@
+.user-preview {
+  background: #03a9f40d;
+  box-shadow: 0 0 11px #0000002b;
+  border-radius: 0.25em;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  @include for-tablet-layout {
+    background-size: 35%;
+  }
+
+  cursor: pointer;
+  .info {
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .actions {
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+    background-color: #000000c9;
+    transform: translateY(100%);
+    transition: transform 0.2s;
+    a {
+      color: white;
+    }
+  }
+
+  &:hover .actions {
+    transform: translateY(0);
+  }
+  button {
+    background-color: #ffffff;
+    padding: 0.3em 0.6em;
+    border-radius: 30px;
+    color: #000000;
+    background-size: 100% 100%;
+  }
+}

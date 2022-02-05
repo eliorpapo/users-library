@@ -1,0 +1,25 @@
+.user-filter {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 17px;
+    margin-right: 10px;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-family: Poppins-Medium;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.2;
+    padding: 0 5px;
+    max-width: 160px;
+  }
+}
